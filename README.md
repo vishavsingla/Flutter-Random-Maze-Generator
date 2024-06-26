@@ -28,13 +28,13 @@ Before you begin, ensure you have met the following requirements:
 
 2. Navigate to the project directory: cd Random-Maze-Generator
 
-3. Install the dependencies: bun install
+3. Install the dependencies: **bun install**
 
 ## Running the Application
 
 To run the application in development mode: 
 
-1. Start the development server: bun run dev
+1. Start the development server: **bun run dev**
 
 2. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
