@@ -1,5 +1,8 @@
 # Random Maze Generator (React + Typescript + TailwindCSS)
 
+## Name - Vishav Singla
+## Email - vishavsinglaofficial@gmail.com
+
 ## Overview
 This project is a simple web application that generates random, solvable mazes. 
 
