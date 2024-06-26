@@ -51,7 +51,7 @@ The page will reload if you make edits. You will also see any lint errors in the
 
 - `src/MazeGenerator.tsx`: Contains the main component for generating and displaying mazes.
 - `src/App.tsx`: The main application component that renders the MazeGenerator.
-- `src/index.tsx`: The entry point of the application.
+- `src/main.tsx`: The entry point of the application.
 
 ## Design Decisions
 
