@@ -43,7 +43,7 @@ Ensure you have the following installed:
 
 1. Navigate to the Flutter app directory:
    ```
-   cd flutter_app
+   cd mobile_app
    ```
 
 2. Get the dependencies:
@@ -60,7 +60,7 @@ Ensure you have the following installed:
 
 1. Navigate to the web app directory:
    ```
-   cd web_app
+   cd website
    ```
 
 2. Install dependencies:
@@ -87,12 +87,12 @@ Both applications provide a similar user experience:
 ## Code Structure
 
 ### Flutter App
-- `flutter_app/lib/main.dart`: Entry point and main app structure
+- `mobile_app/lib/main.dart`: Entry point and main app structure
 
 ### Web App
-- `web_app/src/MazeGenerator.tsx`: Main component for generating and displaying mazes
-- `web_app/src/App.tsx`: Main application component
-- `web_app/src/index.tsx`: Entry point of the web application
+- `website/src/MazeGenerator.tsx`: Main component for generating and displaying mazes
+- `website/src/App.tsx`: Main application component
+- `website/src/index.tsx`: Entry point of the web application
 
 ## Design Decisions
 
