@@ -1,75 +1,125 @@
-# Random Maze Generator (React + Typescript + TailwindCSS)
+# Maze Generator Project (Flutter + Web)
 
 ## Overview
-This project is a simple web application that generates random, solvable mazes. 
+This project consists of two parts: a Flutter mobile application and a web application, both designed to generate random, solvable mazes. The project showcases the versatility of implementing the same core functionality across different platforms.
 
-## Features
+## Project Structure
+The project is divided into two main directories:
+
+1. `/flutter_app`: Contains the Flutter mobile application
+2. `/web_app`: Contains the web application (React + TypeScript)
+
+## Features (Common to both apps)
 - Generates random mazes of sizes between 8x8 and 15x15
 - Ensures all mazes are solvable
 - Creates two random openings for entry and exit
-- Provides a simple, intuitive user interface
+- Provides a clean, intuitive user interface
 - Implements maze generation logic from scratch without third-party libraries
 
 ## Technologies Used
+
+### Flutter App
+- Flutter
+- Dart
+
+### Web App
 - React
 - TypeScript
 - Tailwind CSS
 - Bun
 
 ## Prerequisites
-Before you begin, ensure you have met the following requirements:
+Ensure you have the following installed:
+
+- Flutter SDK (latest stable version)
+- Dart SDK (latest stable version)
 - Node.js (v14.0.0 or later)
-- npm (v6.0.0 or later)
-- Bun (latest version)
+- npm (v6.0.0 or later) or Bun (latest version)
+- Android Studio / VS Code with Flutter and React extensions
 
-## Installation
+## Installation and Setup
 
-1. Clone the repository: https://github.com/vishavsingla/Random-Maze-Generator
+### Flutter App
 
-2. Navigate to the project directory: cd Random-Maze-Generator
+1. Navigate to the Flutter app directory:
+   ```
+   cd flutter_app
+   ```
 
-3. Install the dependencies: bun install
+2. Get the dependencies:
+   ```
+   flutter pub get
+   ```
 
-## Running the Application
+3. Run the app:
+   ```
+   flutter run
+   ```
 
-To run the application in development mode: 
+### Web App
 
-1. Start the development server: bun run dev
+1. Navigate to the web app directory:
+   ```
+   cd web_app
+   ```
 
-2. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+2. Install dependencies:
+   ```
+   bun install
+   ```
 
-The page will reload if you make edits. You will also see any lint errors in the console.
+3. Start the development server:
+   ```
+   bun run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Usage
 
-1. When you open the application, you'll see a "Generate New Maze" button.
-2. Click the button to generate a new random maze.
-3. The maze will be displayed below the button, with blue markers indicating the entry and exit points.
-4. You can generate as many new mazes as you like by clicking the button again.
+Both applications provide a similar user experience:
+
+1. Open the application (mobile or web).
+2. Click/Tap the "Generate New Maze" button.
+3. A new random maze will be displayed, with blue markers indicating entry and exit points.
+4. Generate new mazes as desired by clicking/tapping the button again.
 
 ## Code Structure
 
-- `src/MazeGenerator.tsx`: Contains the main component for generating and displaying mazes.
-- `src/App.tsx`: The main application component that renders the MazeGenerator.
-- `src/index.tsx`: The entry point of the application.
+### Flutter App
+- `flutter_app/lib/main.dart`: Entry point and main app structure
+- `flutter_app/lib/maze_generator.dart`: MazeGenerator widget and maze generation logic
+
+### Web App
+- `web_app/src/MazeGenerator.tsx`: Main component for generating and displaying mazes
+- `web_app/src/App.tsx`: Main application component
+- `web_app/src/index.tsx`: Entry point of the web application
 
 ## Design Decisions
 
-1. **Maze Generation Algorithm**: We used a depth-first search algorithm to generate the maze. This ensures that all generated mazes are solvable and creates interesting, winding paths.
+1. **Shared Core Logic**: The maze generation algorithm (depth-first search) is implemented similarly in both apps to ensure consistent behavior.
 
-2. **Random Sizing**: The maze size is randomly chosen between 8x8 and 15x15 to create varied and interesting mazes each time.
+2. **Platform-Specific UI**: While the core functionality is the same, each app utilizes platform-specific UI components and best practices.
 
-3. **React Hooks**: We utilized React's useState and useCallback hooks for efficient state management and to prevent unnecessary re-renders.
-
-4. **TypeScript**: TypeScript was used to add static typing, improving code quality and developer experience.
-
-5. **Tailwind CSS**: Tailwind was chosen for styling due to its utility-first approach, allowing for rapid UI development.
+3. **Responsive Design**: Both apps adjust to different screen sizes, ensuring a good user experience across devices.
 
 ## Future Improvements
 
-While the current implementation meets all the requirements, here are some potential areas for future enhancement:
+1. Implement a shared backend to store and retrieve mazes across platforms.
+2. Add user accounts to save favorite mazes.
+3. Introduce more maze generation algorithms and allow users to choose between them.
+4. Add a competitive element, such as timed maze-solving challenges.
 
-1. Add difficulty levels (e.g., easy, medium, hard) that affect maze complexity.
-2. Implement a visual solve feature to show the solution path.
-3. Add animations to the maze generation process for a more engaging user experience.
-4. Implement responsive design to better accommodate different screen sizes.
+## Contributing
+
+Contributions to either or both parts of the project are welcome. Please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
