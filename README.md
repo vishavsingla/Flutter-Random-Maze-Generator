@@ -1,4 +1,4 @@
-# Maze Generator Project (Flutter + Web)
+# Maze Generator Project (Flutter + React TS Website)
 
 ## Overview
 This project consists of two parts: a Flutter mobile application and a web application, both designed to generate random, solvable mazes. The project showcases the versatility of implementing the same core functionality across different platforms.
@@ -6,8 +6,8 @@ This project consists of two parts: a Flutter mobile application and a web appli
 ## Project Structure
 The project is divided into two main directories:
 
-1. `/flutter_app`: Contains the Flutter mobile application
-2. `/web_app`: Contains the web application (React + TypeScript)
+1. `/mobile_app`: Contains the Flutter mobile application
+2. `/website`: Contains the web application (React + TypeScript)
 
 ## Features (Common to both apps)
 - Generates random mazes of sizes between 8x8 and 15x15
@@ -22,7 +22,7 @@ The project is divided into two main directories:
 - Flutter
 - Dart
 
-### Web App
+### Website
 - React
 - TypeScript
 - Tailwind CSS
@@ -88,7 +88,6 @@ Both applications provide a similar user experience:
 
 ### Flutter App
 - `flutter_app/lib/main.dart`: Entry point and main app structure
-- `flutter_app/lib/maze_generator.dart`: MazeGenerator widget and maze generation logic
 
 ### Web App
 - `web_app/src/MazeGenerator.tsx`: Main component for generating and displaying mazes
